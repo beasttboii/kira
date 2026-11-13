@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075e54">
+  <meta name="description" content="A clear, mobile-friendly guide to how WhatsApp's HTML web viewer works and why some shared pages may look incomplete.">
+  <title>WhatsApp Web Viewer — A Simple Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Viewer Guide home">
+      <span class="brand-mark">W</span><span>Viewer<span class="brand-light">Guide</span></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#why-incomplete">Why pages look incomplete</a>
+      <a href="#stay-safe">Stay safe</a>
+    </nav>
+    <a class="nav-cta" href="https://faq.whatsapp.com/3663529557148478?locale=en_US" target="_blank" rel="noopener">Official WhatsApp guide ↗</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> THE SIMPLE EXPLAINER</div>
+        <h1>Shared HTML.<br><span>Clearer picture.</span></h1>
+        <p class="hero-lede">What happens when someone shares a webpage or HTML file in WhatsApp—and why it might not look exactly as expected.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#how-it-works">Explore the guide <span>↓</span></a>
+          <a class="text-link" href="#stay-safe">Read safety tips</a>
+        </div>
+        <div class="hero-note"><span class="shield">✓</span> Independent explainer · Based on WhatsApp Help Center information</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a webpage displayed inside a phone">
+        <div class="glow"></div>
+        <div class="float-card float-card-top"><span class="mini-icon">↗</span><span><b>HTML document</b><small>Shared in a chat</small></span></div>
+        <div class="phone">
+          <div class="phone-camera"></div>
+          <div class="phone-screen">
+            <div class="phone-head"><span class="tiny-avatar">W</span><span><b>WhatsApp</b><small>Web viewer</small></span><span class="dots">•••</span></div>
+            <div class="preview-label">SHARED DOCUMENT</div>
+            <div class="preview-title"></div><div class="preview-line wide"></div><div class="preview-line"></div>
+            <div class="preview-panel"><div class="preview-symbol">⌘</div><div class="preview-line wide"></div><div class="preview-line short"></div></div>
+            <div class="preview-line wide"></div><div class="preview-line"></div>
+            <div class="preview-button">Open document</div>
+          </div>
+        </div>
+        <div class="float-card float-card-bottom"><span class="status-check">✓</span><span><b>Restricted viewer</b><small>Some external resources may not load</small></span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="strip-icon">i</div>
+      <p><b>The key idea:</b> WhatsApp can display HTML documents in a restricted viewer. Because that viewer limits some external requests, a page may appear different from how its creator designed it.</p>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="section-heading">
+        <div><div class="eyebrow">01 / THE BASICS</div><h2>How the viewer works</h2></div>
+        <p>Think of an HTML file as a small webpage. It can contain text, layout, images, and interactive elements.</p>
+      </div>
+      <div class="steps">
+        <article class="step-card"><div class="step-number">01</div><div class="step-icon">↗</div><h3>A document is shared</h3><p>Someone sends an HTML document in a WhatsApp conversation.</p></article>
+        <div class="step-arrow">→</div>
+        <article class="step-card"><div class="step-number">02</div><div class="step-icon">▣</div><h3>It opens in a viewer</h3><p>WhatsApp opens the document in a restricted web-viewing environment.</p></article>
+        <div class="step-arrow">→</div>
+        <article class="step-card"><div class="step-number">03</div><div class="step-icon">◌</div><h3>Some content may be limited</h3><p>Requests to domains the viewer does not allow may be blocked.</p></article>
+      </div>
+      <div class="encryption-note"><span>🔒</span><p><b>Privacy detail:</b> WhatsApp says web content opened this way could be accessible to Meta, so it is not protected by end-to-end encryption. Your personal messages and calls remain end-to-end encrypted.</p></div>
+    </section>
+
+    <section class="section section-soft" id="why-incomplete">
+      <div class="section-heading">
+        <div><div class="eyebrow">02 / WHAT YOU MIGHT NOTICE</div><h2>Why a page can look incomplete</h2></div>
+        <p>It does not automatically mean the file is broken or your phone has a problem.</p>
+      </div>
+      <div class="issue-layout">
+        <div class="issue-list">
+          <div class="issue-item"><span class="issue-icon">▧</span><span><b>Images, icons, or fonts are missing</b><small>They may be hosted on a domain the viewer does not permit.</small></span></div>
+          <div class="issue-item"><span class="issue-icon">▤</span><span><b>The layout or styling looks unfinished</b><small>Stylesheets or other design resources may not load.</small></span></div>
+          <div class="issue-item"><span class="issue-icon">↗</span><span><b>Some links or controls do nothing</b><small>Interactive features can depend on blocked resources.</small></span></div>
+          <div class="issue-item"><span class="issue-icon">▦</span><span><b>Embedded content does not appear</b><small>Charts, maps, and embedded items may not load.</small></span></div>
+        </div>
+        <aside class="tip-card">
+          <div class="tip-tag">GOOD TO KNOW</div><div class="tip-bulb">✦</div>
+          <h3>A different display doesn't always mean damage.</h3>
+          <p>The viewer may simply be preventing the document from loading resources from certain external locations.</p>
+          <a href="#stay-safe">See what to do next →</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="stay-safe">
+      <div class="section-heading">
+        <div><div class="eyebrow">03 / WHAT TO DO</div><h2>View shared documents carefully</h2></div>
+        <p>A few sensible steps can help you choose how to view a document.</p>
+      </div>
+      <div class="safety-grid">
+        <article class="safety-card"><div class="safety-icon green">✓</div><h3>Know the sender</h3><p>Only open HTML documents from people or organizations you recognize and trust.</p></article>
+        <article class="safety-card"><div class="safety-icon amber">!</div><h3>Don't assume it's verified</h3><p>WhatsApp notes that its secure viewer cannot confirm whether a document is safe.</p></article>
+        <article class="safety-card"><div class="safety-icon blue">PDF</div><h3>Ask for another format</h3><p>If the page is incomplete, ask the sender to share the information in a message or as a PDF.</p></article>
+      </div>
+      <div class="source-card">
+        <div><div class="eyebrow">PRIMARY SOURCE</div><h3>Read WhatsApp's original explanation</h3><p>This page is an independent, redesigned summary—not an official WhatsApp or Meta website.</p></div>
+        <a class="button button-dark" href="https://faq.whatsapp.com/3663529557148478?locale=en_US" target="_blank" rel="noopener">Open Help Center ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">W</span><span>Viewer<span class="brand-light">Guide</span></span></a><p>Independent educational explainer. Not affiliated with WhatsApp or Meta.</p><span>© <span id="year"></span> ViewerGuide</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
